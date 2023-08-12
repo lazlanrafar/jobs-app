@@ -37,7 +37,7 @@ const Popularjobs = () => {
           <Text>Something went wrong</Text>
         ) : (
           <FlatList
-            data={data.data}
+            data={data}
             renderItem={({ item }) => (
               <PopularJobCard
                 item={item}
