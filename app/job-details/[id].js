@@ -13,6 +13,7 @@ import { COLORS, SIZES, icons } from "../../constants";
 import {
   Company,
   JobAbout,
+  JobFooter,
   JobTabs,
   ScreenHeaderBtn,
   Specifics,
@@ -118,6 +119,13 @@ const JobDetails = () => {
             </View>
           )}
         </ScrollView>
+
+        <JobFooter
+          url={
+            data[0]?.job_google_link ??
+            "https://careers.google.com/jobs/results/"
+          }
+        />
       </>
     </SafeAreaView>
   );
